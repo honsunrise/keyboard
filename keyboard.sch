@@ -347,9 +347,13 @@ F 3 "" H 3750 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 4750 1350 5550
+	1350 4750 1350 5150
 Wire Wire Line
-	1200 5150 1550 5150
+	1350 5150 1350 5550
+Wire Wire Line
+	1200 5150 1350 5150
+Wire Wire Line
+	1350 5150 1550 5150
 Connection ~ 1350 5150
 Wire Wire Line
 	1750 5450 1750 5550
@@ -362,7 +366,13 @@ Wire Wire Line
 Wire Wire Line
 	2750 950  2750 1000
 Wire Wire Line
-	2750 1300 3750 1300
+	2750 1300 3000 1300
+Wire Wire Line
+	3000 1300 3250 1300
+Wire Wire Line
+	3250 1300 3500 1300
+Wire Wire Line
+	3500 1300 3750 1300
 Connection ~ 3000 1300
 Connection ~ 3250 1300
 Connection ~ 3500 1300
@@ -417,7 +427,9 @@ Wire Wire Line
 Wire Wire Line
 	850  3700 1250 3700
 Wire Wire Line
-	1550 3700 2800 3700
+	1550 3700 1700 3700
+Wire Wire Line
+	1700 3700 2800 3700
 Wire Wire Line
 	1700 3700 1700 4000
 $Comp
@@ -432,7 +444,11 @@ F 3 "" H 1300 11450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	850  13050 1250 13050
+	850  13050 950  13050
+Wire Wire Line
+	950  13050 1150 13050
+Wire Wire Line
+	1150 13050 1250 13050
 Connection ~ 950  13050
 Connection ~ 1150 13050
 $Comp
@@ -4518,7 +4534,9 @@ F 3 "" H 1650 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 950  1000 1200
+	1000 950  1000 1100
+Wire Wire Line
+	1000 1100 1000 1200
 Wire Wire Line
 	1000 1100 1350 1100
 Wire Wire Line
@@ -4636,9 +4654,13 @@ F 3 "" H 5900 8550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5750 8150 5750 8950
+	5750 8150 5750 8550
 Wire Wire Line
-	5550 8550 5900 8550
+	5750 8550 5750 8950
+Wire Wire Line
+	5550 8550 5750 8550
+Wire Wire Line
+	5750 8550 5900 8550
 Connection ~ 5750 8550
 Wire Wire Line
 	5350 8250 5350 8150
@@ -4824,11 +4846,19 @@ Connection ~ 1550 2400
 Connection ~ 1950 2400
 Connection ~ 2150 2400
 Wire Wire Line
-	1900 2100 2550 2100
+	1900 2100 1950 2100
+Wire Wire Line
+	1950 2100 2150 2100
+Wire Wire Line
+	2150 2100 2550 2100
 Connection ~ 1950 2100
 Connection ~ 2150 2100
 Wire Wire Line
-	1300 2100 1600 2100
+	1300 2100 1350 2100
+Wire Wire Line
+	1350 2100 1550 2100
+Wire Wire Line
+	1550 2100 1600 2100
 Connection ~ 1350 2100
 Connection ~ 1550 2100
 $Comp
@@ -4854,7 +4884,13 @@ F 3 "" H 2150 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 2400 2150 2400
+	1300 2400 1350 2400
+Wire Wire Line
+	1350 2400 1550 2400
+Wire Wire Line
+	1550 2400 1950 2400
+Wire Wire Line
+	1950 2400 2150 2400
 $Comp
 L VDDA #PWR11
 U 1 1 5B5A9B48
@@ -4897,7 +4933,9 @@ Wire Wire Line
 Wire Wire Line
 	2550 4200 2550 4250
 Wire Wire Line
-	2300 4550 2550 4550
+	2300 4550 2450 4550
+Wire Wire Line
+	2450 4550 2550 4550
 $Comp
 L GND #PWR10
 U 1 1 5B5AD33D
@@ -4911,9 +4949,19 @@ F 3 "" H 2450 4550 50  0001 C CNN
 $EndComp
 Connection ~ 2450 4550
 Wire Wire Line
-	3500 3400 4000 3400
+	3500 3400 3600 3400
 Wire Wire Line
-	3900 3100 3900 3400
+	3600 3400 3700 3400
+Wire Wire Line
+	3700 3400 3800 3400
+Wire Wire Line
+	3800 3400 3900 3400
+Wire Wire Line
+	3900 3400 4000 3400
+Wire Wire Line
+	3900 3100 3900 3200
+Wire Wire Line
+	3900 3200 3900 3400
 $Comp
 L VDDA #PWR21
 U 1 1 5B5B109B
@@ -4983,7 +5031,11 @@ $EndComp
 Wire Wire Line
 	3500 9050 3500 8900
 Wire Wire Line
-	3500 8900 3800 8900
+	3500 8900 3600 8900
+Wire Wire Line
+	3600 8900 3700 8900
+Wire Wire Line
+	3700 8900 3800 8900
 Connection ~ 3700 8900
 Connection ~ 3600 8900
 Wire Wire Line
@@ -5017,8 +5069,36 @@ Wire Wire Line
 Wire Wire Line
 	2350 1700 1650 1700
 Wire Wire Line
-	2750 1000 3750 1000
+	2750 1000 3000 1000
+Wire Wire Line
+	3000 1000 3250 1000
+Wire Wire Line
+	3250 1000 3500 1000
+Wire Wire Line
+	3500 1000 3750 1000
 Connection ~ 3500 1000
 Connection ~ 3250 1000
 Connection ~ 3000 1000
+$Comp
+L BQ24075 U?
+U 1 1 5B560468
+P 7700 10100
+F 0 "U?" H 7500 10725 50  0000 R CNN
+F 1 "BQ24075" H 7500 10650 50  0000 R CNN
+F 2 "" H 7950 9550 50  0001 L CNN
+F 3 "" H 7900 10300 50  0001 C CNN
+	1    7700 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_DGS Q?
+U 1 1 5B56ACF8
+P 10100 10400
+F 0 "Q?" H 10300 10450 50  0000 L CNN
+F 1 "Q_NMOS_DGS" H 10300 10350 50  0000 L CNN
+F 2 "" H 10300 10500 50  0001 C CNN
+F 3 "" H 10100 10400 50  0001 C CNN
+	1    10100 10400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
